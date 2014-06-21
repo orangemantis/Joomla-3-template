@@ -1,0 +1,51 @@
+.logo {
+	width: 120px;
+	position: absolute;
+	top: 10;
+	padding: 4px 0px 0px 4px;
+}
+
+.omc-collapse-padding {
+	padding: 100px 0px 0px 0px;
+}
+
+.jumbotron {
+	height: 300px;
+	background: #000000 url("../img/dem-jumbo.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.jumbo-content {
+	height: 280px;
+	padding: 40px 10px;
+}
+
+.content-padding {
+	padding: 20px;
+}
+
+@media ( min-width : 768px) {
+	.jumbo-content {
+		padding: 0px;
+	}
+}
+
+@media ( max-width : 767px) {
+	.full-width,.jumbotron {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.jumbotron {
+		margin-top: -20px;
+	}
+	.jumbotron .container {
+		margin-top: 20px;
+	}
+	.full-width .container,.jumbotron .container {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
