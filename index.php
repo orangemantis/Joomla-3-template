@@ -64,12 +64,12 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     <div class="container">
     <div class="row">
     	<div class="span8">
-    	<jdoc:include type="modules" name="right-1" style="none" />
+    	<jdoc:include type="modules" name="leftt-1" style="none" />
     	<jdoc:include type="component" />
-    	<jdoc:include type="modules" name="right-2" style="none" />
+    	<jdoc:include type="modules" name="left-2" style="none" />
     	</div>
     	<div class="span4">
-    	<!--  place left content here -->
+    	<jdoc:include type="modules" name="right" style="none" />
     	</div>
     </div>
     </div>
