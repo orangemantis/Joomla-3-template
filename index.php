@@ -4,6 +4,8 @@ $app = JFactory::getApplication();
 $doc = JFactory::getDocument();
 $siteName = $app->getCfg('sitename');
 JHtml::_('bootstrap.framework');
+$doc->addStyleSheet('/media/jui/css/bootstrap.min.css');
+$doc->addStyleSheet('/media/jui/css/bootstrap-responsive.min.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/styles.css');
 $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
 ?>
@@ -26,11 +28,11 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo '/templates/' . $this->template . 'ico/apple-touch-icon-144-precomposed.png'; ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo '/templates/' . $this->template . 'ico/apple-touch-icon-114-precomposed.png'; ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo '/templates/' . $this->template . 'ico/apple-touch-icon-72-precomposed.png'; ?>">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo '/templates/' . $this->template . 'ico/apple-touch-icon-57-precomposed.png'; ?>">
+    <link rel="shortcut icon" href="<?php echo '/templates/' . $this->template .'/ico/favicon.png'; ?>">
   </head>
 
   <body>
@@ -38,7 +40,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
       <div class="">
-          <a href="#"><img class="logo" src="img/logo.png" alt="Planet Cleveland Logo/></a>
+          <a href="#"><img class="logo" src="<?php echo '/templates/' . $this->template .'/img/logo.png'; ?>" alt="Planet Cleveland Logo"/></a>
           </div>
       <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -85,11 +87,5 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
     		<jdoc:include type="modules" name="bottom" style="none" />
     	</div>
     </div>
-
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-
   </body>
 </html>
