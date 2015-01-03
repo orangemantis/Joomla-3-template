@@ -58,9 +58,7 @@ $doc->addScript('/templates/' . $this->template . '/js/main.js', 'text/javascrip
 
 	<div id="jumbotron" class="row jumbotron">
     	<div class="container jumbo-content">
-
-      	<!--  put billboard info here hide if not main page -->
-
+			<jdoc:include type="modules" name="content" style="none" />
     	</div> <!-- /container -->
     </div>
     <div class="container">
